@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* padding: 0; */
+    font-family: Arial;
+    padding: 10px;
+    background-color: azure;
+    margin: 0;
+
+}
+/* .header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: #33186c;
+} */
+.header {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.tintuc {
+    border: 1px solid black;
+}
+
+.header h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 400px;
+}
+.header > p {
+    font-size: 20px;
+}
+.banner >img{
+    width: 100%;
+}
+nav {
+    background-color: #d6ff70;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.timkiem> form > input {
+    width: 600px;
+    height: 35px;
+}
+.timkiem> form > input ::placeholder {
+    /* margin-left: 5px; */
+    color: burlywood;
+}
+.timkiem> form >button {
+    width: 100px;
+    height: 35px;
+    background-color: #F66092;
+    border: 1px solid black;
+    border-radius: 0;
+    margin-right: 5px;
+}
+.menu {
+    display: flex;
+    
+}
+.menu a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.menu a:hover{
+    background-color: #BCE2C9;
+    color: white;
+}
+
+.container{
+    margin-top: 10px;
+}
+
+p {
+    font-weight: 500;
+    word-break: break-all;
+    text-align: justify;
+
+}
+
+
+.footer {
+    background-color: #17e432;
+    margin-top: 5px;
+    
+}
+.footer >.nhomfooter{
+    display: flex;
+    justify-content: space-around;
+}
+.chuquyen {
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+}
+
+.content {
+    display: flex;
+
+}
+.thongtin h2{
+    margin-top: 5px;
+    color: red;
+}
+.thongtin > a {
+    list-style: none;
+}
+@media screen and (max-width: 600px){
+    noidung,
+    
+    .menu {
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+    }
+    .content {
+        display: inline-block;
+    
+    }
+   
+    .timkiem>form >input {
+        width: 100%;
+    }
+    nav {
+        display: block;
+    }
+    .timkiem >form >button{
+        margin-top: 10px;
+       
+    }
+
+    .header {
+        display: block;
+        text-align: center;
+        background: rgb(18, 148, 59);
+        color: #18266c;
+    }
+    .header > img {
+        margin-top: 5%;
+    }
+    .header >h1 {
+       /* margin-left: 10%; */
+       margin: 0;
+       text-align: center;
+    }
+    .new {
+        height: 700px;
+    }
+    .newcon {
+        display: block;
+    }
+    .newcon img {
+        width: 100%;
+        margin: 0;
+    }
+    .footer > .nhomfooter {
+        display: block;
+    }
+    .thongtin {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1224px) {
+    .header {
+        justify-content: center;
+        margin-left: 0;
+    }
+    .header h1 {
+        margin-left: 0;
+    }
+    .menu {
+        justify-content: center;
+    }
+    .menu a {
+        padding: 30px 35px;
+    }
+    .content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .box {
+        width: 45%;
+        margin-top: 20px;
+    }
+nav {
+    display: block;
+}
+    .timkiem > form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .timkiem > form > input {
+        width: 400px;
+    }
+    .timkiem > form > button {
+        margin-left: 7px;
+        width: 80px;
+        /* ma */
+    }
+
+    .tt2 > button {
+        padding: 5px 20px;
+    }
+    .new {
+        height: 700px;
+    }
+    .newcon {
+        display: block;
+    }
+    .newcon img {
+        width: 100%;
+        margin: 0;
+    }
+    .footer .nhomfooter {
+        justify-content: space-around;
+    }
+}
